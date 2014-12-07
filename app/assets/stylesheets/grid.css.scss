@@ -10,8 +10,8 @@ $brand-color: #AA012A;
   padding: 0;
   li {
     float: left;
-    padding: 1em;
-    height: 25em;
+    padding: 1em 0;
+    height: 20em;
     width: 100%;
     list-style: none;
     background: url(placeholder.jpg) bottom center no-repeat;
@@ -20,7 +20,7 @@ $brand-color: #AA012A;
     h3 {
       background: $brand-color;
       color: lighten($brand-color, 20);
-      padding-top: 6.5em;
+      padding-top: 5em;
       text-align: center;
       height: 100%;
       opacity: 1;
@@ -40,6 +40,7 @@ $brand-color: #AA012A;
   .grid {
     max-width: 700px;
     li {
+      padding: 1em;
       width: 25em;
     }
   }
@@ -48,6 +49,7 @@ $brand-color: #AA012A;
   .grid {
     max-width: 1055px;
     li {
+      padding: 1em;
       width: 25em;
     }
   }
@@ -56,6 +58,7 @@ $brand-color: #AA012A;
   .grid {
     max-width: 1400px;
     li {
+      padding: 1em;
       width: 25em;
     }
   }

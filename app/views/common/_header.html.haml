@@ -1,30 +1,29 @@
 %nav.navbar.navbar-default.navbar-fixed-top
   .container-fluid
-    .container
-      .navbar-header
-        %button{:type => 'button', :class => 'navbar-toggle', 'data-toggle' =>'collapse', 'data-target' => '#navbar-collapse'}
-          %span.sr-only Toggle navigation
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-        = link_to 'Insatiable', root_url, class: 'navbar-brand'
+    .navbar-header
+      %button{:type => 'button', :class => 'navbar-toggle', 'data-toggle' =>'collapse', 'data-target' => '#navbar-collapse'}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'Insatiable', root_url, class: 'navbar-brand'
 
-      #navbar-collapse.collapse.navbar-collapse
-        %ul.nav.navbar-nav.navbar-right
-          %li
-            = link_to 'About', about_path
-          %li.dropdown
-            %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-              Work
-              %span.caret
-            %ul.dropdown-menu{:role => "menu"}
-              %li
-                = link_to 'Film', film_path
-              %li
-                = link_to 'Comics', comics_path
-              %li
-                = link_to 'Gallery', gallery_path
-              %li
-                = link_to 'Photography', photography_path
-          %li
-            = link_to 'Contact', contact_path
+    #navbar-collapse.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          = link_to 'About', about_path
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            Work
+            %span.caret
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              = link_to 'Film', film_path
+            %li
+              = link_to 'Comics', comics_path
+            %li
+              = link_to 'Gallery', gallery_path
+            %li
+              = link_to 'Photography', photography_path
+        %li
+          = link_to 'Contact', contact_path
