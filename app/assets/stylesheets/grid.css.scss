@@ -27,6 +27,7 @@ $brand-color: #AA012A;
       transition: .5s;
       margin: 0;
       &:hover {
+        background: darken($brand-color, 20);;
         opacity: 1;
       }
     }

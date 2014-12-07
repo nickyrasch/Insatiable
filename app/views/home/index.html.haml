@@ -1,16 +1,23 @@
 .banner.home-page.top
-.container-fluid
-  .grid-container
-    %ul.grid
-      %li
-        %h3
-          FILM
-      %li
-        %h3
-          COMICS
-      %li
-        %h3
-          GALLERY
-      %li
-        %h3
-          PHOTOGRAPHY
+  %h1 Welcome to the Insatiable
+
+.container
+  .container-fluid
+    .grid-container
+      %ul.grid
+        %a{ :href => film_path }
+          %li
+            %h3
+              FILM
+        %a{ :href => comics_path }
+          %li
+            %h3
+              COMICS
+        %a{ :href => gallery_path }
+          %li
+            %h3
+              GALLERY
+        %a{ :href => photography_path }
+          %li
+            %h3
+              PHOTOGRAPHY
