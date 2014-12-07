@@ -1,0 +1,23 @@
+%nav.navbar.navbar-inverse.navbar-fixed-bottom
+  .container-fluid
+    .container
+      .navbar-header
+        %button{:type => 'button', :class => 'navbar-toggle', 'data-toggle' =>'collapse', 'data-target' => '#navbar-collapse'}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        = link_to 'All rights reserved Insatiable', root_url, class: 'navbar-brand'
+
+      #navbar-collapse.collapse.navbar-collapse
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            = link_to 'comics', comics_path
+          %li
+            = link_to 'gallery', gallery_path
+          %li
+            = link_to 'photography', photography_path
+          %li
+            = link_to 'film', film_path
+          %li
+            = link_to 'contact', contact_path

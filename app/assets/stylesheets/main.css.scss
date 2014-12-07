@@ -1,0 +1,32 @@
+$brand-color: #AA012A;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+a, .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand{
+  color: $brand-color;
+  transition: .5s;
+  &:hover {
+    color: lighten($brand-color, 10);
+  }
+}
+nav.navbar.navbar-default.navbar-fixed-top {
+  background: #fff;
+}
+.top {
+  margin-top: 3.5em;
+}
+.banner.home-page {
+  height: 35em;
+  background: url(insatiable.jpg) center center fixed no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px)  {
+}
+@media (min-width: 1200px) {
+}
+
